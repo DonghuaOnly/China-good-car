@@ -1,12 +1,16 @@
     document.addEventListener('DOMContentLoaded', function() {
         // --- DATA ---
         const carModels = [
-            { id: 1, name: 'GAC E9 Grand', 
+            { id: 1, name: 'GAC GN8 PHEV', 
             images: [
 
-             'https://images.unsplash.com/photo-1611387729624-124795b31d27?q=80&w=2070&auto=format&fit=crop',
-             'https://placehold.co/800x600/1a1a1a/ffffff?text=E9+Interior',
-             'https://placehold.co/800x600/1a1a1a/ffffff?text=E9+Rear',
+             'images/GAC GN8 PHEV (7).jpg',
+             'images/GAC GN8 PHEV (6).jpg',
+             'images/GAC GN8 PHEV (5).jpg',
+             'images/GAC GN8 PHEV (3).jpg',
+             'images/GAC GN8 PHEV (2).jpg',
+             'images/GAC GN8 PHEV (9).jpg',
+             'images/GAC GN8 PHEV (1).jpg',
              
               ],
               type: 'MPV', price: '$75,500', engine: '2.0L PHEV', description: 'A luxurious and spacious plug-in hybrid MPV, offering premium comfort and outstanding fuel efficiency for the modern executive.', tags: ['MPV', 'Popular', 'New Arrival'] },
