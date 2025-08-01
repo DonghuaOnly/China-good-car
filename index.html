@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGC CAMBODIA - Premium & Pre-Owned Models</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="logo">
+            <span class="chinese-name">中国好车</span>
+            <span class="english-tagline">CHINA GOOD CAR</span>
+        </a>
+        
+        <nav class="main-nav">
+            <div class="nav-item"><a href="#" class="nav-link">Home</a></div>
+            <div class="nav-item">
+                <a href="#all-models-section" class="nav-link model-filter-link" data-filter="All">Models</a>
+                <div class="dropdown-content">
+                    <a href="#all-models-section" class="model-filter-link" data-filter="All">All Models</a>
+                    <a href="#all-models-section" class="model-filter-link" data-filter="MPV">MPV</a>
+                    <a href="#all-models-section" class="model-filter-link" data-filter="SEDAN">SEDAN</a>
+                    <a href="#all-models-section" class="model-filter-link" data-filter="SUV">SUV</a>
+                    <a href="#all-models-section" class="model-filter-link" data-filter="Pre-Order">Pre-Order</a>
+                    <a href="#all-models-section" class="model-filter-link" data-filter="Used Car">Used Car</a>
+                </div>
+            </div>
+            <div class="nav-item"><a href="#" class="nav-link">About Us</a></div>
+            <div class="nav-item"><a href="#" class="nav-link">Contact</a></div>
+        </nav>
+
+        <div class="header-actions">
+             <div class="search-bar" id="headerSearchTrigger">
+                <input type="text" readonly placeholder="Search models...">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+        </div>
+
+        <div class="mobile-icons">
+             <button class="mobile-icon-button" id="mobileSearchTrigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <button class="mobile-icon-button" id="mobileMenuToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link dropdown-toggle">Models</a>
+        <div class="dropdown-content">
+            <a href="#all-models-section" class="model-filter-link" data-filter="All">All Models</a>
+            <a href="#all-models-section" class="model-filter-link" data-filter="MPV">MPV</a>
+            <a href="#all-models-section" class="model-filter-link" data-filter="SEDAN">SEDAN</a>
+            <a href="#all-models-section" class="model-filter-link" data-filter="SUV">SUV</a>
+            <a href="#all-models-section" class="model-filter-link" data-filter="Pre-Order">Pre-Order</a>
+            <a href="#all-models-section" class="model-filter-link" data-filter="Used Car">Used Car</a>
+        </div>
+        <a href="#" class="nav-link">About Us</a>
+        <a href="#" class="nav-link">Contact</a>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-overlay-content">
+            <div class="search-overlay-header">
+                <div class="search-bar">
+                    <input type="text" id="overlaySearchInput" placeholder="Search models, type, brand...">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+                <button class="search-overlay-close-btn" id="searchOverlayCloseBtn">&times;</button>
+            </div>
+            <div class="search-recommendations-container">
+                <h3 id="search-results-title">Popular Models</h3>
+                <div class="search-recommendations-grid" id="search-recommendations-grid">
+                    <!-- Search results will be populated here -->
+                </div>
+                <div id="search-no-results">
+                    <h3>No models found</h3>
+                    <p>Please try a different search term.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero-section">
+            <div class="slider-container">
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1617469723732-4e4b3d3958a4?q=80&w=2070&auto=format&fit=crop');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1617808929759-b7d74a3b3a6d?q=80&w=1974&auto=format&fit=crop');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1622119951909-5a95b85f039f?q=80&w=2070&auto=format&fit=crop');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=2070&auto=format&fit=crop');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070&auto=format&fit=crop');"></div>
+
+                <button class="slider-nav-button prev-slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button class="slider-nav-button next-slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+
+        <section class="content-section" id="new-arrivals-section">
+            <div class="content-section-header">
+                <a href="#all-models-section" class="view-all-link model-filter-link" data-filter="All">
+                    <h2>New Arrivals <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></h2>
+                </a>
+            </div>
+            <div class="card-scroll-container" id="new-arrivals-grid"></div>
+            <button class="scroll-btn prev">&#10094;</button>
+            <button class="scroll-btn next">&#10095;</button>
+        </section>
+
+        <section class="content-section" id="in-stock-section">
+            <div class="content-section-header">
+                <a href="#all-models-section" class="view-all-link model-filter-link" data-filter="All">
+                    <h2>In Stock <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></h2>
+                </a>
+            </div>
+            <div class="card-scroll-container" id="in-stock-grid"></div>
+            <button class="scroll-btn prev">&#10094;</button>
+            <button class="scroll-btn next">&#10095;</button>
+        </section>
+
+        <section class="content-section" id="most-popular-section">
+            <div class="content-section-header">
+                <a href="#all-models-section" class="view-all-link model-filter-link" data-filter="All">
+                    <h2>Most Popular <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></h2>
+                </a>
+            </div>
+            <div class="card-scroll-container" id="most-popular-grid"></div>
+            <button class="scroll-btn prev">&#10094;</button>
+            <button class="scroll-btn next">&#10095;</button>
+        </section>
+
+        <section class="content-section" id="used-car-section">
+            <div class="content-section-header">
+                <a href="#all-models-section" class="view-all-link model-filter-link" data-filter="Used Car">
+                    <h2>Used Car <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></h2>
+                </a>
+            </div>
+            <div class="card-scroll-container" id="used-car-grid"></div>
+            <button class="scroll-btn prev">&#10094;</button>
+            <button class="scroll-btn next">&#10095;</button>
+        </section>
+
+        <section class="models-page-container" id="all-models-section">
+            <div class="content-section-header">
+                <h2 id="all-models-title">All Models</h2>
+            </div>
+            <div class="models-grid" id="modelsGrid"></div>
+            <div id="no-results" style="grid-column: 1 / -1;">
+                <h3>No models found</h3>
+                <p>Please try a different filter.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="modelModal">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+            <div class="modal-image-section" id="modalImageSection">
+                <!-- Modal images will be injected here -->
+            </div>
+            <div class="modal-details-section" id="modalDetailsSection">
+                <!-- Modal details will be injected here -->
+            </div>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="footer-column">
+            <h3>Our Network</h3>
+            <ul>
+                <li><a href="#">China</a></li>
+                <li><a href="#">Hong Kong (China)</a></li>
+                <li><a href="#">Cambodia</a></li>
+                <li><a href="#">Russia</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Registration Agreement</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Tel: 088 533 3382</p>
+            <p>Tel: 096 485 8667</p>
+            <p>E-mail: cgccambodia168@gmail.com</p>
+            <p>Sangkat Tek Laak1, Street 271, Phnom Penh</p>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+             <p>Whatsapp: +855 96 485 8667</p>
+             <p>Facebook: <a href="#" target="_blank">chinagoodcar</a></p>
+             <p>Telegram: <a href="#" target="_blank">chinabestcar</a></p>
+        </div>
+        <div class="footer-copyright-section">
+            <p>&copy; 2025 CGC CAMBODIA. All Rights Reserved. Professional Automotive Solutions.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
