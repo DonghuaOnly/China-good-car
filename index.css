@@ -713,7 +713,7 @@
 
         .modal-content {
             background-color: var(--bg-secondary);
-            width: 90%;
+            width: 100%;
             max-width: 750px; /* Scaled down */
             max-height: 90vh;
             position: relative;
