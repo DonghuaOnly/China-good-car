@@ -14,7 +14,7 @@
              
               ],
               type: 'MPV', price: 'unavailable', engine: '2.0L PHEV', description: 'A luxurious and spacious plug-in hybrid MPV, offering premium comfort and outstanding fuel efficiency for the modern executive.', tags: ['MPV', 'Popular', 'New Arrival'] },
-            { id: 2, name: 'GAC GS4 Max',
+            { id: 2, name: 'GAC S9',
              images: [
 
              'images/Image_2025-08-28_131911_606.jpg',
@@ -26,24 +26,32 @@
                  'images/Image_2025-08-28_131953_807.jpg',
 
                ],
-               type: 'SUV', price: '$29,999', engine: '1.5L Turbo', description: 'A versatile and stylish compact SUV, offering a comfortable ride, advanced technology, and ample space for families.', tags: ['SUV'] },
-            { id: 3, name: 'ZEEKR 009', images: [
+               type: 'SUV', price: '$7X,XXX', engine: 'none', description: 'A versatile and stylish compact SUV, offering a comfortable ride, advanced technology, and ample space for families.', tags: ['SUV'] },
+            { id: 3, name: 'GAC GS3 Emzoom', images: [
             
-            'https://images.unsplash.com/photo-1669229752209-6758b736b840?q=80&w=2070&auto=format&fit=crop', 
-            'https://placehold.co/800x600/1a1a1a/ffffff?text=009+Cabin', 
-            'https://placehold.co/800x600/1a1a1a/ffffff?text=009+Profile'], 
+            'images/Image_2025-08-28_140811_857.png',
+            'images/Image_2025-08-28_140818_601.png',
+            'images/Image_2025-08-28_140821_705.png',
+            'images/Image_2025-08-28_140824_384.png',
+            'images/Image_2025-08-28_140826_809.png',
+            ], 
 
-            type: 'MPV', price: '$128,000', engine: 'Dual-Motor EV', description: 'A futuristic and bold all-electric MPV with a cutting-edge design, lounge-like interior, and formidable performance.', tags: ['MPV', 'Popular'] },
-            { id: 4, name: 'GAC GS3 Emzoom', images: [
+            type: 'SUV', price: '$2X,XXX', engine: '1.5 Turbo', description: 'A futuristic and bold all-electric MPV with a cutting-edge design, lounge-like interior, and formidable performance.', tags: ['SUV', 'Popular'] },
+            { id: 4, name: 'GAC M8', images: [
+                'images/Image_2025-08-28_141546_024.jpg',
+                'images/Image_2025-08-28_141549_145.jpg',
+                'images/Image_2025-08-28_141607_768.jpg',
+                'images/Image_2025-08-28_141610_784.jpg',
+                'images/Image_2025-08-28_141613_904.jpg',
+                'images/Image_2025-08-28_141616_648.jpg',
+                'images/Image_2025-08-28_141619_760.jpg',
+            ], 
 
-            'https://images.unsplash.com/photo-1625044812233-38e0e3844888?q=80&w=2070&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1621775334898-50812a487534?q=80&w=1964&auto=format&fit=crop'], 
-
-            type: 'SUV', price: '$22,500', engine: '1.5L Turbo', description: 'A compact and agile SUV perfect for city driving, featuring a modern, aggressive look and smart, user-friendly features.', tags: ['SUV', 'New Arrival'] },
+            type: 'MPV', price: '$6X,XXX', engine: '2.0T', description: 'A compact and agile SUV perfect for city driving, featuring a modern, aggressive look and smart, user-friendly features.', tags: ['MPV', 'Popular'] },
             { id: 5, name: 'GAC GS8', images: [
 
-            'https://images.unsplash.com/photo-1622119951909-5a95b85f039f?q=80&w=2070&auto=format&fit=crop', 
-            'https://placehold.co/800x600/1a1a1a/ffffff?text=GS8+Interior'],
+      
+            ],
              
             type: 'SUV', price: '$41,500', engine: '2.0L Turbo', description: 'A commanding and luxurious 7-seater SUV that delivers powerful performance and premium comfort for all passengers.', tags: ['SUV', 'Popular'] },
             { id: 6, name: 'GAC M8', images: [
@@ -451,5 +459,6 @@
 
         initializePage();
     });
+
 
 
