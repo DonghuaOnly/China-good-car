@@ -13,7 +13,7 @@
              'images/GAC GN8 PHEV (1).jpg',
              
               ],
-              type: 'MPV', price: 'unavailable', engine: '2.0L PHEV', description: 'A luxurious and spacious plug-in hybrid MPV, offering premium comfort and outstanding fuel efficiency for the modern executive.', tags: ['MPV', 'Popular', 'New Arrival'] },
+              type: 'MPV', price: 'none', engine: '2.0L PHEV', description: 'A luxurious and spacious plug-in hybrid MPV, offering premium comfort and outstanding fuel efficiency for the modern executive.', tags: ['MPV', 'Popular', 'New Arrival'] },
             { id: 2, name: 'GAC S9',
              images: [
 
@@ -48,22 +48,38 @@
             ], 
 
             type: 'MPV', price: '$6X,XXX', engine: '2.0T', description: 'A compact and agile SUV perfect for city driving, featuring a modern, aggressive look and smart, user-friendly features.', tags: ['MPV', 'Popular'] },
-            { id: 5, name: 'GAC GS8', images: [
-
+            { id: 5, name: 'Buick GL8', images: [
+                'images/Image_2025-08-28_162423_766.jpg',
+                'images/Image_2025-08-28_162426_422.jpg',
+                'images/Image_2025-08-28_162428_903.jpg',
+                'images/Image_2025-08-28_162431_175.jpg',
+                'images/Image_2025-08-28_162435_831.jpg',
+                'images/Image_2025-08-28_162438_446.jpg',
+                'images/Image_2025-08-28_162440_591.jpg',
+                'images/Image_2025-08-28_162443_623.jpg',
+                'images/Image_2025-08-28_162447_583.jpg',
+                'images/Image_2025-08-28_162450_735.jpg',
+                'images/Image_2025-08-28_162453_335.jpg',
+                'images/Image_2025-08-28_162456_935.jpg',
+                'images/Image_2025-08-28_162459_767.jpg',
+                'images/Image_2025-08-28_162505_478.jpg',
+                'images/Image_2025-08-28_162508_303.jpg',
       
             ],
              
-            type: 'SUV', price: '$41,500', engine: '2.0L Turbo', description: 'A commanding and luxurious 7-seater SUV that delivers powerful performance and premium comfort for all passengers.', tags: ['SUV', 'Popular'] },
-            { id: 6, name: 'GAC M8', images: [
+            type: 'MPV', price: '$1XX,XXX', engine: '2.0L Turbo', description: 'A commanding and luxurious 7-seater SUV that delivers powerful performance and premium comfort for all passengers.', tags: ['SUV', 'Popular'] },
+            { id: 6, name: 'TOYOTA BZ3X', images: [
+                'images/Image_2025-08-28_162152_727.jpg',
+                'images/Image_2025-08-28_162204_887.jpg',
+                'images/Image_2025-08-28_162207_816.jpg',
+                'images/Image_2025-08-28_162211_487.jpg',
+            
+            ],
 
-            'https://images.unsplash.com/photo-1617469723732-4e4b3d3958a4?q=80&w=2070&auto=format&fit=crop', 
-            'https://placehold.co/800x600/1a1a1a/ffffff?text=M8+Lounge'],
-
-             type: 'MPV', price: '$55,000', engine: '2.0L PHEV', description: 'The ultimate luxury MPV, designed with a first-class cabin experience, sophisticated style, and smooth hybrid power.', tags: ['MPV'] },
+             type: 'SUV', price: '$3X,XXX', engine: 'none', description: 'The ultimate luxury MPV, designed with a first-class cabin experience, sophisticated style, and smooth hybrid power.', tags: ['MPV'] },
             { id: 7, name: 'AVATR 12', images: [
 
-            'https://images.unsplash.com/photo-1691122335914-8d356879412a?q=80&w=2070&auto=format&fit=crop', 
-            'https://placehold.co/800x600/1a1a1a/ffffff?text=AVATR+12+Interior'], 
+            ], 
 
             type: 'SEDAN', price: '$65,000', engine: 'Dual-Motor EV', description: 'A revolutionary electric gran coupe featuring avant-garde design, exceptional intelligence, and exhilarating performance.', tags: ['SEDAN', 'Popular', 'New Arrival'] },
             { id: 8, name: 'AVATR 07', images: [
@@ -78,12 +94,22 @@
             'https://placehold.co/800x600/1a1a1a/ffffff?text=SU7+Interior'],
 
              type: 'SEDAN', price: '$59,999', engine: 'Dual-Motor EV', description: 'The Max version of Xiaomi\'s debut EV, featuring enhanced performance and extended range for the ultimate driving experience.', tags: ['SEDAN', 'Popular', 'New Arrival'] },
-            { id: 10, name: 'Used Toyota Camry', images: [
+            { id: 10, name: 'HYUNDAI CUSTO', images: [
+                'images/Image_2025-08-28_161543_519.jpg',
+                'images/Image_2025-08-28_161547_928.jpg',
+                'images/Image_2025-08-28_161551_551.jpg',
+                'images/Image_2025-08-28_161554_655.jpg',
+                'images/Image_2025-08-28_161557_632.jpg',
+                'images/Image_2025-08-28_161600_335.jpg',
+                'images/Image_2025-08-28_161603_168.jpg',
+                'images/Image_2025-08-28_161608_015.jpg',
+                'images/Image_2025-08-28_161611_064.jpg',
+        
             
-            'https://images.unsplash.com/photo-1631292782229-a8b237773532?q=80&w=2070&auto=format&fit=crop', 
-            'https://placehold.co/800x600/1a1a1a/ffffff?text=Camry+Interior'], 
+            
+            ], 
 
-            type: 'SEDAN', price: '$18,500', engine: '2.5L Petrol', description: 'A reliable and well-maintained used sedan, perfect for daily commutes. Excellent condition with low mileage.', tags: ['Used Car', 'SEDAN'] },
+            type: 'MPV', price: '$4X,XXX', engine: '2.5L Petrol', description: 'A reliable and well-maintained used sedan, perfect for daily commutes. Excellent condition with low mileage.', tags: ['Used Car', 'SEDAN'] },
         ];
 
         // --- ELEMENT SELECTORS ---
@@ -458,6 +484,7 @@
 
         initializePage();
     });
+
 
 
 
