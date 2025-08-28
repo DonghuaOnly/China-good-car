@@ -192,7 +192,6 @@
                     <div class="spec-item"><span>Type</span><span>${car.type}</span></div>
                     <div class="spec-item"><span>Engine</span><span>${car.engine}</span></div>
                 </div>
-                 <button class="cta-button" style="margin-top: onclick= "https://t.me/CGC_Cambodia" 2rem;">Contact us</button>
             `;
             
             modalOverlay.classList.add('active');
@@ -459,6 +458,7 @@
 
         initializePage();
     });
+
 
 
 
