@@ -13,12 +13,17 @@
              'images/GAC GN8 PHEV (1).jpg',
              
               ],
-              type: 'MPV', price: '$75,500', engine: '2.0L PHEV', description: 'A luxurious and spacious plug-in hybrid MPV, offering premium comfort and outstanding fuel efficiency for the modern executive.', tags: ['MPV', 'Popular', 'New Arrival'] },
+              type: 'MPV', price: 'unavailable', engine: '2.0L PHEV', description: 'A luxurious and spacious plug-in hybrid MPV, offering premium comfort and outstanding fuel efficiency for the modern executive.', tags: ['MPV', 'Popular', 'New Arrival'] },
             { id: 2, name: 'GAC GS4 Max',
              images: [
 
-             'https://images.unsplash.com/photo-1616422285853-207920218153?q=80&w=2070&auto=format&fit=crop',
-             'https://placehold.co/800x600/1a1a1a/ffffff?text=GS4+Interior'
+             'images/Image_2025-08-28_131911_606.jpg'
+             'images/Image_2025-08-28_132008_326.jpg'
+             'images/Image_2025-08-28_132013_135.jpg'
+                 'images/Image_2025-08-28_132001_838.jpg'
+                 'images/Image_2025-08-28_132016_613.jpg'
+                 'images/Image_2025-08-28_131958_518.jpg'
+                 'images/Image_2025-08-28_131953_807.jpg'
 
                ],
                type: 'SUV', price: '$29,999', engine: '1.5L Turbo', description: 'A versatile and stylish compact SUV, offering a comfortable ride, advanced technology, and ample space for families.', tags: ['SUV'] },
@@ -446,3 +451,4 @@
 
         initializePage();
     });
+
