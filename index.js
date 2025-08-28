@@ -17,13 +17,13 @@
             { id: 2, name: 'GAC GS4 Max',
              images: [
 
-             'images/Image_2025-08-28_131911_606.jpg'
-             'images/Image_2025-08-28_132008_326.jpg'
-             'images/Image_2025-08-28_132013_135.jpg'
-                 'images/Image_2025-08-28_132001_838.jpg'
-                 'images/Image_2025-08-28_132016_613.jpg'
-                 'images/Image_2025-08-28_131958_518.jpg'
-                 'images/Image_2025-08-28_131953_807.jpg'
+             'images/Image_2025-08-28_131911_606.jpg',
+             'images/Image_2025-08-28_132008_326.jpg',
+             'images/Image_2025-08-28_132013_135.jpg',
+                 'images/Image_2025-08-28_132001_838.jpg',
+                 'images/Image_2025-08-28_132016_613.jpg',
+                 'images/Image_2025-08-28_131958_518.jpg',
+                 'images/Image_2025-08-28_131953_807.jpg',
 
                ],
                type: 'SUV', price: '$29,999', engine: '1.5L Turbo', description: 'A versatile and stylish compact SUV, offering a comfortable ride, advanced technology, and ample space for families.', tags: ['SUV'] },
@@ -451,4 +451,5 @@
 
         initializePage();
     });
+
 
