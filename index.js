@@ -218,6 +218,10 @@
                     <div class="spec-item"><span>Type</span><span>${car.type}</span></div>
                     <div class="spec-item"><span>Engine</span><span>${car.engine}</span></div>
                 </div>
+                        <button class="cta-button" style="margin-top: 2rem;"
+                onclick="window.open('https://t.me/CGC_Cambodia', '_blank')">
+                Contact via Telegram
+                        </button>
             `;
             
             modalOverlay.classList.add('active');
@@ -484,6 +488,7 @@
 
         initializePage();
     });
+
 
 
 
